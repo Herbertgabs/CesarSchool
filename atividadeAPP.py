@@ -8,7 +8,7 @@ def adicionarAluno():
     notas = [eval(i) for i in notas]
     print(notas)
 
-    print(nome + " adicionado!")
+    print(nome + " foi adicionado(a)")
 
     alunos.append({"id": id_aluno, "nome": nome, "notas": notas})
 
@@ -21,7 +21,7 @@ def procurarAluno(id_aluno):
         if aluno['id'] == id_aluno:
             print(f"Encontrado: {aluno}")
             return
-    print(f"Aluno com o ID {id_aluno} não encontrado!")
+    print(id_aluno + " nao encontrado")
 
 def calcularMedia():
     quantidadeDeNotas = 0
@@ -33,7 +33,7 @@ def calcularMedia():
 
     media = somaDasNotas / quantidadeDeNotas
 
-    print(f"A média das notas dos estudantes foi: {media}")
+    print(f"A media das notas foi: {media}")
 
 def salvarRegistrosTxt():
     with open('lista_alunos.txt', 'w') as arquivo_de_alunos:
@@ -59,7 +59,7 @@ def carregarRegistroTxt():
             elif i > 1:
                 registroDeAluno['notas'].append(int(lista[i]))
         alunos.append(registroDeAluno)
-    print("Carregamento realizado com sucesso!")
+    print("Arquivo carregado")
 
 alunos = []
 while True:
@@ -79,7 +79,7 @@ while True:
     elif opcao == "2":
         exibirAlunos()
     elif opcao == "3":
-        procurarAluno (int(input("Digite o ID do aluno que deseja pesquisar: ")))
+        procurarAluno (int(input("Digite o ID_aluno: ")))
     elif opcao == "4":
         calcularMedia()
     elif opcao == "5":
@@ -89,4 +89,4 @@ while True:
     elif opcao == "0":
         sys.exit()
     else:
-        print(f"Opção {opcao} inválida, tente novamente!")
+        print(f"Opção {opcao} inválida")
