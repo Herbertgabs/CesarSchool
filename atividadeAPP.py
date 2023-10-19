@@ -35,7 +35,7 @@ def calcularMedia():
 
     print(f"A média das notas dos estudantes foi: {media}")
 
-def salvarRegistrosEmTxt():
+def salvarRegistrosTxt():
     with open('lista_alunos.txt', 'w') as arquivo_de_alunos:
         for aluno in alunos:
             arquivo_de_alunos.write(f"{aluno['id']}, {aluno['nome']}, {aluno['nota']}\n")
