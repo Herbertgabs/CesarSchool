@@ -17,7 +17,7 @@ Foi criada uma função calcularMedia() para calcular a média das notas de todo
 A função percorre a lista de estudantes, calcula a média e a exibe.
 Salvar Registros em Arquivo:
 
-Foi criada uma função salvarRegistrosEmTxt() para salvar os registros em um arquivo de texto.
+Foi criada uma função salvarRegistrosTxt() para salvar os registros em um arquivo de texto.
 Os registros foram formatados e escritos em um arquivo chamado "alunos.txt".
 Carregar Registros do Arquivo:
 
